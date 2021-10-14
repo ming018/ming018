@@ -14,6 +14,8 @@
 # (출력 예제)
 # 키 175cm 남자의 표준 체중은 67.38kg 입니다.
 
+#(21.10.12)
+
 def std_weight(hight,gender):
     if gender=="남자":
         weight=(hight/100)**2*22
@@ -25,3 +27,17 @@ def std_weight(hight,gender):
 
 
 std_weight(174,"남자")
+
+# (21.10.14)
+def std_weight(hight,gender):
+    if gender=="남자":
+        return (hight/100)*(hight/100)*22
+    elif gender=="여자":
+        return (hight/100)*(hight/100)*21
+hight=174
+gender="남자"
+weight=std_weight(hight,gender)
+print("키 {0}cm {1}의 표준 체중은 {2}kg 입니다.".format(hight,gender,weight))  
+
+
+
